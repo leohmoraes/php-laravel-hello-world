@@ -31,7 +31,7 @@ RUN composer dump-autoload --optimize && composer run-script post-install-cmd
 #ENTRYPOINT ["/usr/share/docker-laravel/bin/start.sh"]
 
 #CMD bash -c "composer install && php artisan serve --host 0.0.0.0 --port 5001"
-CMD bash -c "php artisan serve --host 0.0.0.0 --port 3000"
+CMD bash -c "php artisan serve --host 0.0.0.0 --port 80"
 
 EXPOSE 80
 ENTRYPOINT ["/bin/sh", "-c"]
