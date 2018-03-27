@@ -34,4 +34,6 @@ RUN composer dump-autoload --optimize && composer run-script post-install-cmd
 CMD bash -c "php artisan serve --host 0.0.0.0 --port 80"
 
 EXPOSE 80
+EXPOSE 443
+
 ENTRYPOINT ["/bin/sh", "-c"]
